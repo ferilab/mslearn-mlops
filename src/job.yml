@@ -4,7 +4,7 @@ command: >-
   python train.py
   --diabetes-csv ${{inputs.diabetes}}
 inputs:
-  diabetes-dev-folder:
+  diabetes-dev:
     type: uri_folder
     path: azureml://experimentation/data/
   reg_rate: 0.01
