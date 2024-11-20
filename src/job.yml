@@ -4,9 +4,9 @@ command: >-
   python train.py
   --diabetes-csv ${{inputs.diabetes}}
 inputs:
-  diabetes-dev:
+  diabetes:
     type: uri_folder
-    path: azureml://experimentation/data/
+    path: azureml://datastores/workspaceblobstore/paths/experimentation/data/
   reg_rate: 0.01
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml: fmianji1
