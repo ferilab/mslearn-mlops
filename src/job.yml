@@ -1,8 +1,8 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code:
+code: src/model
 command: >-
   python train.py
-  --diabetes-csv ${{inputs.diabetes}}
+  --diabetes-dev ${{inputs.diabetes}}
 inputs:
   diabetes:
     type: uri_folder
