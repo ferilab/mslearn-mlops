@@ -5,7 +5,7 @@ command: >-
   --diabetes-csv ${{inputs.diabetes}}
   --reg_rate ${{inputs.training_data}}
 inputs:
-  training_data: diabetes-dev-folder 
+  diabetes-dev-folder:
     type: uri_folder
     path: azureml:experimentation/data
   reg_rate: 0.01
