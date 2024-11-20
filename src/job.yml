@@ -1,5 +1,5 @@
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
-code: /home/fereidoun/mslearn-mlops/src/model
+code: /model
 command: >-
   python train.py
   --diabetes-csv ${{inputs.diabetes}}
