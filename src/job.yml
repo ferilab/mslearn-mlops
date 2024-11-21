@@ -9,7 +9,7 @@ inputs:
     type: uri_folder
     path: azureml://datastores/workspaceblobstore/paths/experimentation/data/  # Path to the registered data asset
   reg_rate: 0.01
-environment: AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
+environment: "azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest"
 compute: azureml:fmianji1
 experiment_name: mlops1
 description: First experiment with mlops.
