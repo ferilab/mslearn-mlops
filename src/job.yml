@@ -4,7 +4,7 @@ code: ./src/model  # Path to the folder containing train.py (relative to the roo
 command: >-
   python train.py
   --training_data ${{inputs.training_data}}
-  --reg_rate ${{inputs.reg_rate}}
+
 inputs:
   training_data:
     type: uri_folder
