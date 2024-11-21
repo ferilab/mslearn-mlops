@@ -7,7 +7,7 @@ command: >-
 inputs:
   training_data:
     type: uri_folder
-    path: azureml://datastores/workspaceblobstore/paths/experimentation/data/  # Path to the registered data asset
+    path: azureml:/experimentation/data/  # Path to the registered data asset
   reg_rate: 0.01  # Regularization rate for the model
 environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml: fmianji1
