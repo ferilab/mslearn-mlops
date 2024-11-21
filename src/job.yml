@@ -1,3 +1,4 @@
+---
 $schema: https://azuremlschemas.azureedge.net/latest/commandJob.schema.json
 code: ./src/model  # Path to the folder containing train.py (relative to the root directory)
 command: >-
